@@ -1,90 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>YogStudio | Yoga Classes</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- Header & Navigation -->
-  <header>
-    <div class="logo">🧘 Yoga Bliss</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#classes">Classes</a>
-      <a href="#about">About</a>
-      <a href="#blog">Blog</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Home Section -->
-  <section id="home" class="section hero">
-    <div class="content">
-      <h1>Find Your Inner Peace</h1>
-      <p>Join our yoga sessions to achieve harmony of body and mind.</p>
-      <a href="#contact" class="btn">Book a Free Trial</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YogStudio | Yoga Classes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+      <div class="leaf"></div>
+      <div class="leaf"></div>
+      <div class="leaf"></div>
+      <div class="leaf"></div>
+      <div class="leaf"></div>
     </div>
-  </section>
+    <!-- Header -->
+    <header>
+      <div class="logo breathe">🧘 YogStudio</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#classes">Classes</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <!-- Sections -->
+    <section id="home" class="section hero">
+      <div class="content">
+        <h1>Find Your Inner Peace</h1>
+        <p class="tagline">
+          Reconnect with your body, breath, and soul through the art of yoga.
+        </p>
 
-  <!-- Classes Section -->
-  <section id="classes" class="section fade-in">
-    <h2>Our Classes</h2>
-    <div class="card-container">
-      <div class="card">
-        <h3>Hatha Yoga</h3>
-        <p>Balance and flexibility with controlled poses.</p>
+        <div class="highlight-icons">
+          <div class="icon-box">
+            <span>🧘‍♀️</span>
+            <p>Personalized Guidance</p>
+          </div>
+          <div class="icon-box">
+            <span>🌿</span>
+            <p>Tranquil Environment</p>
+          </div>
+          <div class="icon-box">
+            <span>🕉️</span>
+            <p>Spiritual Harmony</p>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn">Book a Free Trial</a>
       </div>
-      <div class="card">
-        <h3>Vinyasa Yoga</h3>
-        <p>Flow-based sequences for strength and mindfulness.</p>
+    </section>
+
+    <section id="classes" class="section reveal">
+      <h2>Our Classes</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Hatha Yoga</h3>
+          <p>
+            Perfect for beginners, focusing on basic postures and breathing
+            techniques to build strength and flexibility gradually.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Vinyasa Yoga</h3>
+          <p>
+            Dynamic flow-based sequences that synchronize breath with movement,
+            building strength and mindfulness.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Restorative Yoga</h3>
+          <p>
+            Gentle, supported poses designed to relax the nervous system and
+            promote deep healing and restoration.
+          </p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Restorative Yoga</h3>
-        <p>Gentle movements to calm the nervous system.</p>
+    </section>
+
+    <section id="about" class="section reveal">
+      <h2>About Us</h2>
+      <p>
+        Welcome to <b>YogStudio</b> — a space to breathe, move, and
+        reconnect. At <b>YogStudio</b>, we believe yoga is more than just a workout
+        — it’s a way to find balance in a busy world. Whether you're stepping
+        onto the mat for the first time or deepening an existing practice, our
+        classes are designed to meet you where you are. <br><br>Founded in 2024, our
+        mission has always been simple: to create an inclusive, welcoming
+        environment where people of all backgrounds and abilities can experience
+        the transformative power of yoga. With a blend of traditional teachings
+        and modern approaches, our experienced instructors guide you through
+        mindful movement, breathwork, and meditation practices that nurture both
+        body and mind. <br><br>From energizing vinyasa flows to calming yin sessions, we
+        offer a variety of classes to support your personal journey — whether
+        you're here to build strength, find stillness, reduce stress, or simply
+        move with intention. <br>Join our growing community and discover how yoga
+        can support you — on and off the mat. <b>Come as you are. Leave feeling
+        more like yourself.</b>
+      </p>
+    </section>
+
+    <section id="blog" class="section reveal">
+      <h2>From the Blog</h2>
+      <div class="blog-layout">
+        <!-- Featured Blog Post (Left) -->
+        <div class="main-post">
+          <div class="post featured-post">
+            <h3>🧘 Yoga for a Balanced Life</h3>
+            <p>
+              Discover how yoga influences emotional balance, strengthens inner
+              peace, and cultivates harmony through breath and movement.
+            </p>
+            <a href="blog1.html" class="read-more">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Side Posts (Right) -->
+        <div class="side-posts">
+          <div class="small-post">
+            <h3>✨ 5 Benefits of Daily Yoga</h3>
+            <p>
+              Improve flexibility, reduce stress, and enhance clarity with
+              consistent practice.
+            </p>
+            <a href="blog2.html" class="read-more">Read More</a>
+          </div>
+          <div class="small-post">
+            <h3>🌅 Morning Yoga Routine</h3>
+            <p>
+              Start your day with intention using these energizing morning
+              flows.
+            </p>
+            <a href="blog3.html" class="read-more">Read More</a>
+          </div>
+          <div class="small-post">
+            <h3>💨 Breathing Techniques</h3>
+            <p>
+              Explore pranayama exercises to help manage stress and stay
+              focused.
+            </p>
+            <a href="blog4.html" class="read-more">Read More</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="section slide-up">
-    <h2>About Us</h2>
-    <p>At Yoga Bliss, we focus on holistic well-being. With 15+ years of experience, we guide practitioners of all levels toward mental and physical balance.</p>
-  </section>
-
-  <!-- Blog Section -->
-  <section id="blog" class="section fade-in">
-    <h2>From the Blog</h2>
-    <div class="blog-posts">
-      <div class="post">
-        <h3>5 Benefits of Daily Yoga</h3>
-        <p>Improved flexibility, reduced stress, better sleep, and more.</p>
+      <div class="blog-cta">
+        <a href="blog.html" class="btn">Explore All Blog Posts</a>
       </div>
-      <div class="post">
-        <h3>Morning Yoga Routines</h3>
-        <p>Start your day with energy and clarity with these flows.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section slide-up">
-    <h2>Contact Us / Feedback</h2>
-    <form id="contactForm">
-      <input type="text" id="name" placeholder="Your Name" required/>
-      <input type="email" id="email" placeholder="Your Email" required/>
-      <textarea id="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send via WhatsApp</button>
-    </form>
-  </section>
+    <!-- Contact / Feedback -->
+    <section id="contact" class="section reveal">
+      <h2>Contact Us</h2>
+      <form id="whatsappForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea
+          id="message"
+          placeholder="Tell us about your yoga goals or ask any questions..."
+          required
+        ></textarea>
+        <button type="submit" class="btn">Send via WhatsApp</button>
+      </form>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Yoga Bliss. All rights reserved.</p>
-  </footer>
+    <footer>
+      <p>
+        &copy; 2024 YogStudio. All rights reserved. | Find balance, find peace,
+        find yourself.
+      </p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script>
+      // Mobile menu toggle functionality
+      function createMobileMenu() {
+        const nav = document.querySelector("nav");
+        const header = document.querySelector("header");
+
+        // Create hamburger menu button
+        const menuButton = document.createElement("button");
+        menuButton.className = "mobile-menu-btn";
+        menuButton.innerHTML = "☰";
+        menuButton.style.cssText = `
+        display: none;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: #4a7c59;
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      `;
+
+        // Add mobile menu styles
+        const mobileStyles = document.createElement("style");
+        mobileStyles.textContent = `
+        @media (max-width: 767px) {
+          .mobile-menu-btn {
+            display: block !important;
+          }
+          
+          .mobile-menu-btn:hover {
+            background: rgba(129, 199, 132, 0.1);
+          }
+          
+          nav {
+            position: fixed;
+            top: 70px;
+            left: -100%;
+            width: 100%;
+            height: calc(100vh - 70px);
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 2rem 0;
+            transition: left 0.3s ease;
+            z-index: 99;
+          }
+          
+          nav.open {
+            left: 0;
+          }
+          
+          nav a {
+            margin: 1rem 0;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            width: 80%;
+            text-align: center;
+            background: rgba(129, 199, 132, 0.1);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+          }
+          
+          nav a:hover {
+            background: rgba(129, 199, 132, 0.2);
+            transform: scale(1.05);
+          }
+          
+          header {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+          }
+        }
+      `;
+
+        document.head.appendChild(mobileStyles);
+
+        // Insert menu button
+        header.insertBefore(menuButton, nav);
+
+        // Menu toggle functionality
+        menuButton.addEventListener("click", () => {
+          nav.classList.toggle("open");
+          menuButton.innerHTML = nav.classList.contains("open") ? "✕" : "☰";
+        });
+
+        // Close menu when clicking on a link
+        nav.addEventListener("click", (e) => {
+          if (e.target.tagName === "A") {
+            nav.classList.remove("open");
+            menuButton.innerHTML = "☰";
+          }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener("click", (e) => {
+          if (!header.contains(e.target) && nav.classList.contains("open")) {
+            nav.classList.remove("open");
+            menuButton.innerHTML = "☰";
+          }
+        });
+      }
+
+      // Touch gestures for mobile
+      function addTouchGestures() {
+        let touchStartX = 0;
+        let touchStartY = 0;
+
+        document.addEventListener("touchstart", (e) => {
+          touchStartX = e.touches[0].clientX;
+          touchStartY = e.touches[0].clientY;
+        });
+
+        document.addEventListener("touchmove", (e) => {
+          if (!touchStartX || !touchStartY) return;
+
+          const touchEndX = e.touches[0].clientX;
+          const touchEndY = e.touches[0].clientY;
+
+          const deltaX = touchStartX - touchEndX;
+          const deltaY = touchStartY - touchEndY;
+
+          // Prevent default scroll behavior for horizontal swipes
+          if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
+            e.preventDefault();
+          }
+        });
+      }
+
+      // Optimize animations for mobile
+      function optimizeForMobile() {
+        const isMobile = window.innerWidth <= 768;
+
+        if (isMobile) {
+          // Reduce animation intensity
+          document.querySelectorAll(".card").forEach((card) => {
+            card.style.transition = "all 0.2s ease";
+          });
+
+          document.querySelectorAll(".post").forEach((post) => {
+            post.style.transition = "all 0.2s ease";
+          });
+
+          // Disable floating elements on mobile for better performance
+          const floatingElements = document.querySelector(".floating-elements");
+          if (floatingElements) {
+            floatingElements.style.display = "none";
+          }
+        }
+      }
+
+      // Responsive image loading
+      function handleResponsiveImages() {
+        const hero = document.querySelector(".hero");
+        const screenWidth = window.innerWidth;
+
+        if (screenWidth <= 480) {
+          hero.style.backgroundImage = `
+          linear-gradient(135deg, rgba(129, 199, 132, 0.8) 0%, rgba(168, 213, 168, 0.8) 100%),
+          url('https://images.unsplash.com/photo-1554344058-1720f94f28f9?auto=format&fit=crop&w=800&q=60')
+        `;
+        } else if (screenWidth <= 768) {
+          hero.style.backgroundImage = `
+          linear-gradient(135deg, rgba(129, 199, 132, 0.8) 0%, rgba(168, 213, 168, 0.8) 100%),
+          url('https://images.unsplash.com/photo-1554344058-1720f94f28f9?auto=format&fit=crop&w=1200&q=70')
+        `;
+        }
+      }
+
+      // Initialize responsive features
+      function initResponsive() {
+        createMobileMenu();
+        addTouchGestures();
+        optimizeForMobile();
+        handleResponsiveImages();
+
+        // Re-optimize on resize
+        window.addEventListener("resize", () => {
+          optimizeForMobile();
+          handleResponsiveImages();
+        });
+      }
+
+      // Scroll Animation
+      function reveal() {
+        const reveals = document.querySelectorAll(".reveal");
+
+        reveals.forEach((element) => {
+          const windowHeight = window.innerHeight;
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = window.innerWidth <= 768 ? 100 : 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            element.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", reveal);
+
+      // Enhanced header background on scroll
+      window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        const scrolled = window.scrollY > 100;
+
+        if (scrolled) {
+          header.style.background = "rgba(255, 255, 255, 0.98)";
+          header.style.boxShadow = "0 2px 30px rgba(0, 0, 0, 0.15)";
+        } else {
+          header.style.background = "rgba(255, 255, 255, 0.95)";
+          header.style.boxShadow = "0 2px 20px rgba(0, 0, 0, 0.1)";
+        }
+      });
+
+      // Smooth scroll for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            const headerHeight = document.querySelector("header").offsetHeight;
+            const targetPosition = target.offsetTop - headerHeight;
+
+            window.scrollTo({
+              top: targetPosition,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Enhanced WhatsApp Form
+      document
+        .getElementById("whatsappForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const submitBtn = this.querySelector('button[type="submit"]');
+          const originalText = submitBtn.textContent;
+
+          // Show loading state
+          submitBtn.innerHTML = '<span class="loading"></span> Sending...';
+          submitBtn.disabled = true;
+
+          setTimeout(() => {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            const whatsappMessage = `Hello! I'm ${name} (${email}). ${message}`;
+            const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(
+              whatsappMessage
+            )}`;
+
+            window.open(whatsappUrl, "_blank");
+
+            // Reset button
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+
+            // Reset form
+            this.reset();
+          }, 1000);
+        });
+
+      // Add breathing animation to cards on hover (only on desktop)
+      if (window.innerWidth > 768) {
+        document.querySelectorAll(".card").forEach((card) => {
+          card.addEventListener("mouseenter", function () {
+            this.style.animation = "breathe 2s ease-in-out infinite";
+          });
+
+          card.addEventListener("mouseleave", function () {
+            this.style.animation = "none";
+          });
+        });
+      }
+
+      // Initialize all features
+      window.addEventListener("load", () => {
+        initResponsive();
+        reveal();
+      });
+    </script>
+  </body>
 </html>
