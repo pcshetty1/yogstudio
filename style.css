@@ -159,6 +159,7 @@ nav a:hover {
   background: linear-gradient(90deg, #81c784, #a8d5a8);
   border-radius: 2px;
 }
+
 /* Hero Section */
 .hero {
   background: linear-gradient(
@@ -951,120 +952,108 @@ footer {
 /* Blog Section */
 .blog-layout {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: stretch;
-  gap: 2rem;
-  margin-top: 2rem;
+  align-items: center;
+  gap: 1rem;
 }
 
-/* Main (left) blog post */
-.post {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
-  padding: 2rem;
-  border-radius: 15px;
+/* LEFT - Featured Post */
+.main-post {
+  flex: 0 0 32%;
+  max-width: 45%;
+}
+
+.post.featured-post {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
   border-left: 6px solid #81c784;
-  width: 100%;
   text-align: left;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
 }
-.post::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  background: radial-gradient(
-    circle,
-    rgba(129, 199, 132, 0.1) 0%,
-    transparent 70%
-  );
-  border-radius: 50%;
-  transform: translate(25px, -25px);
-}
-.post:hover {
-  transform: translateX(10px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-}
-.post h3 {
+
+.post.featured-post h3 {
+  font-size: 1.8rem;
+  color: #2d4a2d;
   font-family: "Playfair Display", serif;
-  color: #4a7c59;
   margin-bottom: 1rem;
 }
-.main-post {
-  flex: 1 1 40%;
-  max-width: 50%;
-  max-height: 100vh;
+
+.post.featured-post p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
 }
-.post.featured {
-  background: linear-gradient(135deg, #e8f5e9, #ffffff);
-  border-left: 6px solid #81c784;
-}
-.read-more {
+
+.post.featured-post .read-more {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  color: #4a7c59;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.post.featured-post .read-more:hover {
+  color: #388e3c;
+  text-decoration: underline;
+}
+
+/* RIGHT - 3 Compact Posts */
+.side-posts {
+  flex: 0 0 65%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.0rem;
+}
+
+.small-post {
+  background: #ffffff;
+  padding: 1.2rem;
+  border-radius: 15px;
+  border-left: 4px solid #a5d6a7;
+  box-shadow: 0 10px 20px rgba(129, 199, 132, 0.15);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.small-post h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: #2d4a2d;
+  font-family: "Playfair Display", serif;
+}
+
+.small-post p {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.small-post .read-more {
+  font-size: 0.85rem;
   color: #4a7c59;
   font-weight: 600;
   text-decoration: none;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
 }
-.read-more:hover {
+
+.small-post .read-more:hover {
   text-decoration: underline;
   color: #388e3c;
 }
-.blog-cta {
-  margin-top: 2rem;
-  text-align: center;
-}
-/* Side (right) 3 blog posts */
-.side-posts {
-  flex: 0 0 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* evenly distributes height */
-  gap: 1.5rem;
-  width: 60%;
-}
-.small-post {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem;
-  border-radius: 15px;
-  border-left: 6px solid #a5d6a7;
-  text-align: left;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-.small-post h3 {
-  font-size: 1.1rem;
-  color: #4a7c59;
-  font-family: "Playfair Display", serif;
-  margin-bottom: 0.8rem;
-}
-.small-post p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #444;
-}
-.small-post:hover {
+
+/* Hover animation */
+.small-post:hover,
+.post.featured-post:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
 }
-/* .main-post .post {
-  padding: 2rem;
-  font-size: 1rem;
-  line-height: 1.7;
-} */
 
-
+/* Responsive */
 @media (max-width: 991px) {
   .blog-layout {
     flex-direction: column;
@@ -1072,14 +1061,7 @@ footer {
 
   .main-post,
   .side-posts {
+    max-width: 100%;
     flex: 1 1 100%;
-  }
-}
-@media (min-width: 1600px) {
-  .main-post {
-    max-width: 70%;
-  }
-  .side-posts {
-    max-width: 28%;
   }
 }
